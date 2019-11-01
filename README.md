@@ -1,6 +1,6 @@
 # rb5-ros-wrapper
 
-Authors: Jason Kreitz, University of Nevada Las Vegas
+Authors: Jason Kreitz, University of Nevada Las Vegas;
          Giho Jang
 
 The use of the ros wrapper requires a physical connection to an RB5.
