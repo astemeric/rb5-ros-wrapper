@@ -1,0 +1,28 @@
+#goal definition
+char type
+int32 d0
+int32 d1
+float32 data
+float32[6] coordinate
+float32 spd
+float32 acc
+
+---
+
+#result definition
+string state
+string mode
+float32[6] coordinate
+float32[6] endEffectorPos
+float32 spd
+float32 endEffector
+
+---
+
+#feedback	
+string state
+string mode
+float32[6] coordinate
+float32[6] endEffectorPos
+float32 spd
+float32 endEffector
