@@ -19,6 +19,9 @@ rosrun rb5_ros_wrapper RB5_Client
 rosrun rb5_ros_wrapper rb5_ros_wrapper
 
 
+
+
+
 A further explanation of how this wrapper works:
 
 User Application
