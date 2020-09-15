@@ -18,9 +18,8 @@ rosrun rb5_ros_wrapper rb5_update
 rosrun rb5_ros_wrapper RB5_Client
 rosrun rb5_ros_wrapper rb5_ros_wrapper
 
-
-
-
+<br />
+<br />
 
 A further explanation of how this wrapper works:
 
