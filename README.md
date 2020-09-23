@@ -26,6 +26,7 @@ WARNING: The RB5_Client script will need to be restarted anytime any of the othe
 To use:
 The RB5_Client ROS node contains the function calls that the end user can use to send commands to the RB5. 
 <br />
+<br/>
 
 To use example clients:
 Move the desired client file in the example_clients folder to the src/src folder.  
@@ -33,6 +34,7 @@ Edit the CMakeLists under add_executable(RB5_Client src/RB5_Client.cpp) - change
          Note: The way that CMakeLists works is (rosnode_name src/file_to_compile)
          rosnode_name: The name that ROS will use reference the file AFTER running catkin_make
          file_to_compile: The name of the file before compilation
+<br />
 <br />
 How to Create Custom Client:
 Use the examples as a reference. The RB5_Client.h header file will have the definitions for all the function calls.
