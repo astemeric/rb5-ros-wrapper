@@ -1,35 +1,5 @@
 #include "RB5_Client.h"
 
-//dimensions of the tower
-const int TABLE_HEIGHT = 132;
-const int MAX_Z_OFFSET = 15; //17-2
-const int MIN_Z_OFFSET = 0; //2-2
-const int MAX_X_OFFSET = 2;
-const int MIN_X_OFFSET = 0;
-
-//distance between each block
-const float ZOFFSET = 14;
-const float XOFFSET = -23.4;
-
-//poke and push distance
-const float POKE1OFFSET = -5;
-const float POKE2OFFSET = -10;
-const float PUSHOFFSET = -100;
-
-float baseX, baseY, baseZ, t0, t1, t2;
-float curX, curZ;
-
-void initializeGame(float x, float y, float z, float the0, float the1, float the2)
-{
-  baseX = x;
-  baseY = y;
-  baseZ = z;
-  t0 = the0;
-  t1 = the1;
-  t2 = the2;
-  return;
-}
-
 int main(int argc, char *argv[])
 {
     ros::init(argc, argv, "rb5_ros_client");
