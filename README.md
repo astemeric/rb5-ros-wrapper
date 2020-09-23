@@ -11,18 +11,38 @@ Download, place into ~PATH/catkin_ws/src, then catkin_make
 To use:
 The client ROS node contains the function calls that the end user can use to send commands to the RB5. Edit that and catkin_make
 
+To use example clients:
+Move the desired client file in the example_clients folder to the src/src folder.  
+Edit the CMakeLists under add_executable(RB5_Client src/RB5_Client.cpp) - change the RB5_Client.cpp to the new file. Then ROS RUN
+         Note: The way that CMakeLists works is (rosnode_name src/file_to_compile)
+         rosnode_name: The name that ROS will use reference the file AFTER running catkin_make
+         file_to_compile: The name of the file before compilation
+
 To run:
-Compile the main.cpp in src/CobotAPI. Then run.
+Run the following rosrun commands:
 
-rosrun rb5_ros_wrapper rb5_update
-rosrun rb5_ros_wrapper RB5_Client
-rosrun rb5_ros_wrapper rb5_ros_wrapper
-
+rosrun rb5_ros_wrapper cobot_controller <br />
+rosrun rb5_ros_wrapper rb5_update <br />
+rosrun rb5_ros_wrapper rb5_ros_wrapper <br />
+rosrun rb5_ros_wrapper RB5_Client <br />
+<br />
+WARNING: The RB5_Client script will need to be restarted anytime any of the other nodes are closed. This is to reset the home position, so it does not move erratically.
 <br />
 <br />
 <br />
-
+How to Create Custom Client:
+Use the examples as a reference. The RB5_Client.h header file will have the definitions for all the function calls.
+<br />
+The RB5_Client.cpp file currently does not implement any of those function calls. It shows the direct, hard-coded message that gets sent down the pipeline...
+<br />
+For a demonstration of the API function calls, look at example_clients/RB5_Jenga.cpp
+<br />
+<br />
+<br />
 A further explanation of how this wrapper works:
+<br />
+<br />
+<br />
 
 User Application
 
@@ -46,3 +66,4 @@ RB5
             You can see the function calls that occur when your application receives a command packet from ROS (around line 348).
             You can see function calls such as moveJoint, moveTCP (move end effector), etc (around line 525). 
             You can see how commands are sent to the controller as well (around line 476).
+
