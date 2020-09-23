@@ -16,6 +16,8 @@ rosrun rb5_ros_wrapper rb5_update <br />
 rosrun rb5_ros_wrapper rb5_ros_wrapper <br />
 rosrun rb5_ros_wrapper RB5_Client <br />
 <br />
+<br />
+<br />
 WARNING: The RB5_Client script will need to be restarted anytime any of the other nodes are closed. This is to reset the home position, so it does not move erratically.
 <br />
 <br />
