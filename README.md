@@ -39,8 +39,6 @@ Edit the CMakeLists under add_executable(RB5_Client src/RB5_Client.cpp) - change
 How to Create Custom Client:
 Use the examples as a reference. The RB5_Client.h header file will have the definitions for all the function calls.
 <br />
-
-The RB5_Client.cpp file currently does not implement any of those function calls. It shows the direct, hard-coded message that gets sent down the pipeline...
 <br />
 For a demonstration of the API function calls, look at example_clients/RB5_Jenga.cpp
 <br />
