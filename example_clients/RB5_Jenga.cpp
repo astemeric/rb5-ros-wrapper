@@ -1,5 +1,13 @@
 #include "RB5_Client.h"
 
+//note if you want to close out of the program if there is a command time-out
+//replace the line 
+//    ac_.sendGoalAndWait(rb5_goal, ros::Duration(10.0));
+//with the following two lines
+//    ac.sendGoal(goal);
+//    bool finished_before_timeout = ac.waitForResult
+//then you can use the finished_before_timeout variable for flow control
+
 //dimensions of the tower
 const int TABLE_HEIGHT = 132;
 const int MAX_Z_OFFSET = 15; //17-2
