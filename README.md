@@ -5,7 +5,9 @@ Authors: Jason Kreitz, University of Nevada Las Vegas;
 
 The use of the ros wrapper requires a physical connection to an RB5.
 <br />
+
 ------------------------------------------------------------------------------------------------------------------------------------
+
 To install:
 Download, place into ~PATH/catkin_ws/src, then catkin_make
 
@@ -32,6 +34,9 @@ WARNING: The RB5_Client script will need to be restarted anytime any of the othe
 <br />
 <br />
 
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 To use:
 The RB5_Client ROS node contains the function calls that the end user can use to send commands to the RB5. 
 <br />
@@ -54,6 +59,9 @@ Use the examples as a reference. The RB5_Client.h header file will have the defi
 For a demonstration of the API function calls, look at example_clients/RB5_Jenga.cpp
 <br />
 <br />
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 <br />
 A further explanation of how this wrapper works:
 <br />
@@ -84,6 +92,10 @@ RB5
             You can see how commands are sent to the controller as well (around line 476).
 
 <br />
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 Caution: If you receive the following error when running catkin_make
 
          #include rb5_ros_wrapper/MotionAction.h
