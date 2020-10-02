@@ -7,9 +7,6 @@ int main(int argc, char **argv) {
     getchar();
     RBCobot rbCobot;
     rbCobot.start();
-    usleep(1000000);
-
-    printf("Connected...\n");
 
     printf("Press any key to exit\n");
     getchar();
