@@ -73,14 +73,11 @@ RB5
 
 <br />
 Caution: If you receive the following error when running catkin_make
-<br />
-<br />
-#include rb5_ros_wrapper/MotionAction.h
-<br />
-<br />
+         #include rb5_ros_wrapper/MotionAction.h
 Then follow these steps:
+<br />
 <br />
 In the CMakeLists.txt, comment out all add_executable and target_link_libraries lines using a # symbol. Run catkin_make once, then uncomment those lines and run it again.
 <br />
 <br />
-catkin_make is multithreaded by default, and it will normally try to compile the executables before generating custom messages. MotionAction.h contains all the custom action messages for the Action Client/Server, so by running catkin_make the first time (with the executables commented), it will generate the messages. The second catkin_make will then run smoothly, because all the message header files have been generated.
+catkin_make is multithreaded by default, and it will normally try to compile the executables before generating custom messages. This will lead to compilation errors, because it is searching for a header file (MotionAction.h) that has not yet been generated. MotionAction.h contains all the custom action messages for the Action Client/Server, so by running catkin_make the first time (with the executables commented), it will generate the messages. The second catkin_make will then run smoothly, because all the message header files have been generated.
