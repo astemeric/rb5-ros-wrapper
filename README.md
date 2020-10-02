@@ -9,12 +9,15 @@ To install:
 Download, place into ~PATH/catkin_ws/src, then catkin_make
 
 To run:
-Run the following rosrun commands in separate terminals:
+Run the following rosrun commands in separate terminals in order:
 
 rosrun rb5_ros_wrapper cobot_controller <br />
 rosrun rb5_ros_wrapper rb5_update <br />
+rosrun rb5_ros_wrapper rb5_ros_wrapper <br /> <br />
+Wait for the cobot_controller to say "Connected..." <br /> <br />
+
 rosrun rb5_ros_wrapper RB5_Client <br />
-rosrun rb5_ros_wrapper rb5_ros_wrapper <br />
+
 <br />
 <br />
 WARNING: The RB5_Client script will need to be restarted anytime any of the other nodes are closed. This is to reset the home position, so it does not move erratically.
