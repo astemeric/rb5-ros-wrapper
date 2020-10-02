@@ -14,7 +14,9 @@ Download, place into ~PATH/catkin_ws/src, then catkin_make
 Before using:
 Make sure that your IP address is on the 10.0.2.x subnet (ie. Your IP address starts with 10.0.2.x and the gateway is 10.0.2.1) - the robot IP is 10.0.2.7 if you need to ping it... <br />
 
-Also, make sure that the robot is turned on, and the E-Stop is off...
+Also, make sure that the robot is turned on, and the E-Stop is off... <br />
+To turn the robot on, rotate the "on" switch clockwise until it is horizontal to the floor. Then press the blue reset button to connect the power... <br />
+You will know the robot is on if the lights flash... <br />
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
