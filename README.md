@@ -17,7 +17,6 @@ rosrun rb5_ros_wrapper rb5_ros_wrapper <br />
 rosrun rb5_ros_wrapper RB5_Client <br />
 <br />
 <br />
-<br />
 WARNING: The RB5_Client script will need to be restarted anytime any of the other nodes are closed. This is to reset the home position, so it does not move erratically.
 <br />
 <br />
@@ -72,7 +71,7 @@ RB5
             You can see function calls such as moveJoint, moveTCP (move end effector), etc (around line 525). 
             You can see how commands are sent to the controller as well (around line 476).
 
-
+<br />
 Caution: If you receive the following error when running catkin_make
 <br />
 <br />
