@@ -4,12 +4,16 @@ Authors: Jason Kreitz, University of Nevada Las Vegas;
          Giho Jang, Rainbow Robotics
 
 The use of the ros wrapper requires a physical connection to an RB5.
-
+<br />
+------------------------------------------------------------------------------------------------------------------------------------
 To install:
 Download, place into ~PATH/catkin_ws/src, then catkin_make
 
 Before using:
 Make sure that your IP address is on the 10.0.2.x subnet (ie. Your IP address starts with 10.0.2.x and the gateway is 10.0.2.1)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
 
 To run:
 Run the following rosrun commands in separate terminals in order:
