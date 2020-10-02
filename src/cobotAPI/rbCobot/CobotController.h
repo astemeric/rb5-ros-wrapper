@@ -277,6 +277,7 @@ public:
         cmdSocket.setReceiveEvent([&](TCPSocket *sock,  const unsigned char *data, int){
 
             std::string str(reinterpret_cast<const char*>(data));
+
             if(str.compare("The command was executed\n") == 0)
             {
                //client receives validation from the server that command was executed
@@ -454,6 +455,9 @@ public:
         });
 
         bool bRet = dataSocket.ConnectToServer("10.0.2.7",5001);
+
+        printf("Connected...\n");
+
         if(bRet)
         {
             Thread::start(Thread::HzToSec(100));
@@ -927,7 +931,7 @@ protected:
         }
         if(dataSocket.isOpen())
         {
-            dataSocket.Write("reqcfg");
+            //dataSocket.Write("reqcfg");
             dataSocket.Write("reqdata");
         }
     }
