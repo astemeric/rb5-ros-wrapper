@@ -23,7 +23,7 @@ Run the following rosrun commands in separate terminals in order:
 rosrun rb5_ros_wrapper cobot_controller <br />
 rosrun rb5_ros_wrapper rb5_update <br />
 rosrun rb5_ros_wrapper rb5_ros_wrapper <br /> <br />
-Wait for the cobot_controller to say "Connected..." <br /> <br />
+Wait for the cobot_controller to say "Connected..." - then run: <br />
 
 rosrun rb5_ros_wrapper RB5_Client <br />
 
