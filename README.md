@@ -13,6 +13,7 @@ Download, place into ~PATH/catkin_ws/src, then catkin_make
 
 Before using:
 Make sure that your IP address is on the 10.0.2.x subnet (ie. Your IP address starts with 10.0.2.x and the gateway is 10.0.2.1)
+Also, make sure that the robot is turned on, and the E-Stop is off...
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
