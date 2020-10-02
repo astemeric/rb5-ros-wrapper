@@ -9,7 +9,7 @@ To install:
 Download, place into ~PATH/catkin_ws/src, then catkin_make
 
 To run:
-Run the following rosrun commands:
+Run the following rosrun commands in separate terminals:
 
 rosrun rb5_ros_wrapper cobot_controller <br />
 rosrun rb5_ros_wrapper rb5_update <br />
