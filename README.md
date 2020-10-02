@@ -33,6 +33,8 @@ Edit the CMakeLists under add_executable(RB5_Client src/RB5_Client.cpp) - change
          Note: The way that CMakeLists works is (rosnode_name src/file_to_compile)
          rosnode_name: The name that ROS will use reference the file AFTER running catkin_make
          file_to_compile: The name of the file before compilation
+         
+Note: Any time you edit the client script, you will need to run catkin_make again...
 <br />
 <br />
 How to Create Custom Client:
