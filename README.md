@@ -20,6 +20,7 @@ Make sure that your IP address is on the 10.0.2.x subnet (ie. Your IP address st
 To run:
 Run the following rosrun commands in separate terminals in order:
 
+roscore <br />
 rosrun rb5_ros_wrapper cobot_controller <br />
 rosrun rb5_ros_wrapper rb5_update <br />
 rosrun rb5_ros_wrapper rb5_ros_wrapper <br /> <br />
