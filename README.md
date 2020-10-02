@@ -6,7 +6,7 @@ Authors: Jason Kreitz, University of Nevada Las Vegas;
 The use of the ros wrapper requires a physical connection to an RB5.
 
 To install:
-Download, place into ~PATH/catkin_ws/src, then catkin_mak
+Download, place into ~PATH/catkin_ws/src, then catkin_make
 
 To run:
 Run the following rosrun commands:
