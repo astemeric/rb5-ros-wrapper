@@ -73,7 +73,9 @@ RB5
 
 <br />
 Caution: If you receive the following error when running catkin_make
+
          #include rb5_ros_wrapper/MotionAction.h
+
 Then follow these steps:
 <br />
 <br />
